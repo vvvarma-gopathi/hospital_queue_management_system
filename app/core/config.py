@@ -12,7 +12,7 @@ class Settings(BaseSettings):
     jwt_secret_key: str = "change-this-secret-in-production"
     jwt_algorithm: str = "HS256"
     access_token_expire_minutes: int = 60
-    cors_origins: str = "http://localhost:5174,http://127.0.0.1:5174,https://hospital-queue-frontend-m8as9n8d2-vishnuvardhangopathi-6448.vercel.app/"
+    cors_origins: str = "http://localhost:5174,http://127.0.0.1:5174,https://hospital-queue-frontend-m8as9n8d2-vishnuvardhangopathi-6448.vercel.app"
 
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")
 
